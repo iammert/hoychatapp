@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_messages_profile"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/prof1"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"/>
+    
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/icon_green_dot"
+        android:layout_alignBottom="@+id/imageview_messages_profile"
+        android:layout_alignLeft="@+id/imageview_messages_profile"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageview_messages_profile"
+        android:layout_alignTop="@+id/imageview_messages_profile"
+        android:layout_alignBottom="@+id/imageview_messages_profile"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical">
+        
+        <akilliyazilim.justhoy.views.HalvelticaTextViewLight
+            android:id="@+id/messages_message_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Hakan Can (21)"
+            android:layout_marginTop="10dp"/>
+
+        <akilliyazilim.justhoy.views.ShimmerExtendedText
+            android:id="@+id/textview_new_message_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/messages_message_header"
+            android:text="(New Message)"
+            android:layout_alignBottom="@id/messages_message_header"
+            android:textColor="@color/black_light"
+            android:textSize="15sp"
+            android:visibility="invisible"/>
+
+        <akilliyazilim.justhoy.views.HalvelticaTextViewLight
+            android:id="@+id/message_message_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/black_light"
+            android:text="Call me maybe!"
+            android:layout_below="@+id/messages_message_header"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

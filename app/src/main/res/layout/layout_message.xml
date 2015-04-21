@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <ListView
+        android:id="@+id/listview_messaging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seperator"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="30.0sp"
+        android:layout_marginBottom="15dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"
+        />
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_purple"
+        android:layout_above="@+id/relative_message"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relative_message"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <akilliyazilim.justhoy.views.HalvelticaEdittext
+            android:id="@+id/edittext_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="20sp"
+            android:textColor="@color/color_purple"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_toLeftOf="@+id/imageview_send"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/type_here"
+            android:textColorHint="@color/color_purple_more_light"/>
+
+        <ImageView
+            android:id="@+id/imageview_send"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/send_button"
+            android:padding="2dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

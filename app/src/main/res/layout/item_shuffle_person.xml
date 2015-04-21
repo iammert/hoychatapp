@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image_shuffle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/prof2"
+        android:layout_centerHorizontal="true" />
+    
+    <ImageView
+        android:id="@+id/image_green"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/icon_green_dot"
+        android:layout_below="@+id/circle_image_shuffle"
+        android:layout_alignLeft="@+id/circle_image_shuffle"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="10dp"/>
+
+    <akilliyazilim.justhoy.views.HalvelticaTextViewLight
+        android:id="@+id/textview_name_shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_below="@+id/circle_image_shuffle"
+        android:layout_toRightOf="@+id/image_green"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/black"
+        android:text="Mert (21)"/>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <akilliyazilim.justhoy.views.HalvelticaTextView
+        android:id="@+id/fragment_guide_top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hoy"
+        android:textColor="@color/color_white"
+        android:textSize="40sp"
+        android:layout_above="@+id/icon_hoy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"/>
+    
+    <ImageView
+        android:id="@+id/icon_hoy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/icon_hoy_white"
+        android:layout_centerInParent="true"/>
+
+    <akilliyazilim.justhoy.views.HalvelticaTextView
+        android:id="@+id/textview_guide_first_bottom_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_white"
+        android:text="@string/slogan"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/icon_hoy"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <akilliyazilim.justhoy.views.ShimmerExtendedText
+        android:id="@+id/textview_guide_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_guide_first_bottom_slogan"
+        android:text="@string/enter"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/color_purple"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageview_right_arrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/right_arrow_guide"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+
+    <View
+        android:id="@+id/seperator"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/color_purple"
+        android:layout_below="@+id/textview_guide_enter"
+        android:layout_alignLeft="@+id/textview_guide_enter"
+        android:layout_alignRight="@+id/textview_guide_enter"
+        android:visibility="invisible"
+        android:layout_marginTop="2dp"/>
+
+</RelativeLayout>
