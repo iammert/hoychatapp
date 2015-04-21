@@ -7,7 +7,7 @@ Try out the application [on the Android Market][1].
 #SETUP
 
 #step 1
-App is using Parse api to push notification. First, you need to get client key and app id from Parse and replace it with below code APP_ID and CLIENT_KEY.
+App is using Parse api to push notification. First, you need to get client key and app id from [Parse][2] and replace it with below code APP_ID and CLIENT_KEY. Parse is simply let us to use push notification.
 
 ```java
 public class HoyApp extends Application {
@@ -104,3 +104,4 @@ This app uses facebook information of users. For this reason you need to create 
 ```
 
 [1]:https://play.google.com/store/apps/details?id=akilliyazilim.justhoy
+[2]:https://parse.com/docs
